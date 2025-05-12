@@ -1,6 +1,9 @@
 import json
 
 def lambda_handler(event, context):
+    # Print the incoming event for debugging
+    print("Received event:", event)
+    
     # TODO implement
     return {
         'statusCode': 200,
