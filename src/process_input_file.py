@@ -1,22 +1,16 @@
-import json
 import csv
 import psycopg2
 import os
-import boto3
 
-def lambda_handler(event, context):
-    # Database connection parameters (configured via environment variables)
+def process_input_file(file_path):
+    # Database connection parameters (can be configured via environment variables for cloud deployment)
     db_config = {
         'dbname': os.getenv('DB_NAME', 'amkadian'),
         'user': os.getenv('DB_USER', 'amkadian'),
         'password': os.getenv('DB_PASSWORD', ''),
-        'host': os.getenv('DB_HOST', 'your-aurora-endpoint'),
+        'host': os.getenv('DB_HOST', 'localhost'),
         'port': os.getenv('DB_PORT', '5432')
     }
-
-    # S3 bucket and file details (from event or environment variables)
-    bucket_name = os.getenv('S3_BUCKET_NAME', 'your-bucket-name')
-    file_key = os.getenv('S3_FILE_KEY', 'path/to/your_file.csv')
 
     # Counters for statistics
     records_processed = 0
@@ -24,19 +18,13 @@ def lambda_handler(event, context):
     records_inserted = 0
 
     try:
-        # Connect to the Aurora PostgreSQL database
+        # Connect to the PostgreSQL database
         conn = psycopg2.connect(**db_config)
         cursor = conn.cursor()
-        print("Connected to the Aurora PostgreSQL database successfully.")
-
-        # Download the file from S3
-        s3 = boto3.client('s3')
-        local_file_path = '/tmp/input_file.csv'  # Lambda's /tmp directory
-        s3.download_file(bucket_name, file_key, local_file_path)
-        print(f"File downloaded from S3: {bucket_name}/{file_key}")
+        print("Connected to the database successfully.")
 
         # Open the CSV file
-        with open(local_file_path, mode='r') as csv_file:
+        with open(file_path, mode='r') as csv_file:
             csv_reader = csv.reader(csv_file)
             # Skip the header row if present
             next(csv_reader, None)
@@ -82,7 +70,7 @@ def lambda_handler(event, context):
             print("All records processed and committed successfully.")
 
     except FileNotFoundError:
-        print(f"Error: The file at {file_key} was not found in bucket {bucket_name}.")
+        print(f"Error: The file at {file_path} was not found.")
     except psycopg2.Error as db_error:
         print(f"Database error: {db_error}")
     except Exception as e:
@@ -101,13 +89,6 @@ def lambda_handler(event, context):
         print(f"Records skipped (already exist): {records_skipped}")
         print(f"Records inserted: {records_inserted}")
 
-        # Return statistics as the Lambda response
-        return {
-            'statusCode': 200,
-            'body': json.dumps({
-                'message': 'Processing completed successfully.',
-                'records_processed': records_processed,
-                'records_skipped': records_skipped,
-                'records_inserted': records_inserted
-            })
-        }
+# Replace 'sample_books_authors.csv' with the path to your CSV file
+file_path = './data/sample_books_authors.csv'
+process_input_file(file_path)

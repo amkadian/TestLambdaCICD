@@ -1,0 +1,101 @@
+author_id,author_pen_name,book_id,book_name
+1,Jane Austen,1,Pride and Prejudice
+2,Mark Twain,2,Adventures of Huckleberry Finn
+3,George Orwell,3,1984
+4,J.K. Rowling,4,Harry Potter and the Sorcerer's Stone
+5,Ernest Hemingway,5,The Old Man and the Sea
+6,F. Scott Fitzgerald,6,The Great Gatsby
+7,Agatha Christie,7,Murder on the Orient Express
+8,Leo Tolstoy,8,War and Peace
+9,Harper Lee,9,To Kill a Mockingbird
+10,J.R.R. Tolkien,10,The Hobbit
+11,Stephen King,11,The Shining
+12,Charles Dickens,12,Great Expectations
+13,Emily Brontë,13,Wuthering Heights
+14,Arthur Conan Doyle,14,The Hound of the Baskervilles
+15,Oscar Wilde,15,The Picture of Dorian Gray
+16,Virginia Woolf,16,To the Lighthouse
+17,John Steinbeck,17,Of Mice and Men
+18,Franz Kafka,18,The Metamorphosis
+19,William Faulkner,19,The Sound and the Fury
+20,James Joyce,20,Ulysses
+21,Jack London,21,The Call of the Wild
+22,Herman Melville,22,Moby-Dick
+23,Edgar Allan Poe,23,The Raven
+24,Emily Dickinson,24,Poems by Emily Dickinson
+25,Mary Shelley,25,Frankenstein
+26,Joseph Conrad,26,Heart of Darkness
+27,Charlotte Brontë,27,Jane Eyre
+28,Ray Bradbury,28,Fahrenheit 451
+29,Kurt Vonnegut,29,Slaughterhouse-Five
+30,Isaac Asimov,30,Foundation
+31,Philip K. Dick,31,Do Androids Dream of Electric Sheep?
+32,Margaret Atwood,32,The Handmaid's Tale
+33,Haruki Murakami,33,Norwegian Wood
+34,Salman Rushdie,34,Midnight's Children
+35,Chinua Achebe,35,Things Fall Apart
+36,Neil Gaiman,36,American Gods
+37,George R.R. Martin,37,A Game of Thrones
+38,Dan Brown,38,The Da Vinci Code
+39,Suzanne Collins,39,The Hunger Games
+40,Paulo Coelho,40,The Alchemist
+41,John Grisham,41,The Firm
+42,Michael Crichton,42,Jurassic Park
+43,Robin Hobb,43,Assassin's Apprentice
+44,Robert Jordan,44,The Eye of the World
+45,Patrick Rothfuss,45,The Name of the Wind
+46,Brandon Sanderson,46,Mistborn
+47,Ken Follett,47,The Pillars of the Earth
+48,Stieg Larsson,48,The Girl with the Dragon Tattoo
+49,Jo Nesbø,49,The Snowman
+50,Donna Tartt,50,The Goldfinch
+51,Colson Whitehead,51,The Underground Railroad
+52,Elena Ferrante,52,My Brilliant Friend
+53,Orhan Pamuk,53,Snow
+54,Elif Shafak,54,The Bastard of Istanbul
+55,David Mitchell,55,Cloud Atlas
+56,Jonathan Franzen,56,The Corrections
+57,Donna Leon,57,Death at La Fenice
+58,Umberto Eco,58,The Name of the Rose
+59,Arundhati Roy,59,The God of Small Things
+60,Han Kang,60,The Vegetarian
+61,Yann Martel,61,Life of Pi
+62,Anthony Doerr,62,All the Light We Cannot See
+63,Khaled Hosseini,63,The Kite Runner
+64,Markus Zusak,64,The Book Thief
+65,Richard Powers,65,The Overstory
+66,Min Jin Lee,66,Pachinko
+67,Colm Tóibín,67,Brooklyn
+68,Ann Patchett,68,Bel Canto
+69,Jesmyn Ward,69,Sing, Unburied, Sing
+70,Ta-Nehisi Coates,70,The Water Dancer
+71,George Saunders,71,Lincoln in the Bardo
+72,Ottessa Moshfegh,72,Eileen
+73,Ali Smith,73,Autumn
+74,Elizabeth Strout,74,Olive Kitteridge
+75,Marilynne Robinson,75,Gilead
+76,Peter Carey,76,Oscar and Lucinda
+77,Tim Winton,77,Cloudstreet
+78,Chimamanda Ngozi Adichie,78,Half of a Yellow Sun
+79,Ngũgĩ wa Thiong'o,79,A Grain of Wheat
+80,Isabel Allende,80,The House of the Spirits
+81,Julia Alvarez,81,In the Time of the Butterflies
+82,Junot Díaz,82,The Brief Wondrous Life of Oscar Wao
+83,Edwidge Danticat,83,Breath, Eyes, Memory
+84,Jeanette Winterson,84,Oranges Are Not the Only Fruit
+85,Hanif Kureishi,85,The Buddha of Suburbia
+86,Michael Ondaatje,86,The English Patient
+87,Annie Proulx,87,The Shipping News
+88,Barbara Kingsolver,88,The Poisonwood Bible
+89,Geraldine Brooks,89,March
+90,Emma Donoghue,90,Room
+91,Colson Whitehead,91,Zone One
+92,David Foster Wallace,92,Infinite Jest
+93,Don DeLillo,93,White Noise
+94,Thomas Pynchon,94,Gravity's Rainbow
+95,William Gibson,95,Neuromancer
+96,Neal Stephenson,96,Snow Crash
+97,Haruki Murakami,97,Kafka on the Shore
+98,Salman Rushdie,98,The Satanic Verses
+99,Elena Ferrante,99,The Story of a New Name
+100,Philip Roth,100,American Pastoral
