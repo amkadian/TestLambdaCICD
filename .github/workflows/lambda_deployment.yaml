@@ -24,3 +24,12 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: "us-east-1"
+      - name: Update Lambda Environment Variables
+        run: |
+          aws lambda update-function-configuration \
+            --function-name arn:aws:lambda:us-east-1:442426887767:function:TestFunction \
+            --environment "Variables={DB_NAME=amkadian,DB_USER=amkadian,DB_PASSWORD=your_password,DB_HOST=your-aurora-endpoint,S3_BUCKET_NAME=your-bucket-name,S3_FILE_KEY=path/to/your_file.csv}"
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: "us-east-1"
